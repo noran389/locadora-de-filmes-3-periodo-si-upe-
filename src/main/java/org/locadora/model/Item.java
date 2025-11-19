@@ -13,7 +13,7 @@ public class Item {
     public Item(String nome, CalculoPreco estrategiaPreco) {
         this.nome = nome;
         this.estrategiaPreco = estrategiaPreco;
-        this.estado = new Disponivel(); // começa disponível
+        this.estado = new Disponivel();
     }
 
     public void alugar() {

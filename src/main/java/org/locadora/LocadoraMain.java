@@ -102,7 +102,7 @@ public class LocadoraMain {
                     int dias;
                     try {
                         dias = Integer.parseInt(sc.nextLine().trim());
-                        if (dias <= 0) throw new NumberFormatException();
+                        if (dias <= 0 || dias >=31) throw new NumberFormatException();
                     } catch (Exception e) {
                         System.out.println("Número de dias inválido.");
                         break;

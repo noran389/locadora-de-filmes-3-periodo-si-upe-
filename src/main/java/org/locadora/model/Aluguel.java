@@ -50,7 +50,6 @@ public class Aluguel {
         item.devolver();
         if (notificacao != null) {
             notificacao.notificar(cliente, "Devolução registrada: '" + item.getNome() + "'. Obrigado!");
-            // opcional: remover das notificações se não quiser mais notificar esse cliente
             notificacao.removerObservador(cliente);
         }
     }
