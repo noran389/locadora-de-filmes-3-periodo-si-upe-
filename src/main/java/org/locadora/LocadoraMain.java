@@ -20,13 +20,11 @@ public class LocadoraMain {
 
         Notificacao notificacao = new Notificacao();
 
-        // catálogo inicial
         List<Item> catalogo = new ArrayList<>();
         catalogo.add(new Item("Vingadores: Ultimato", new CalculoFilme()));
         catalogo.add(new Item("Zelda: Breath of the Wild", new CalculoJogo()));
         catalogo.add(new Item("Duna 2 (Lançamento)", new CalculoLancamento()));
 
-        // lista de aluguéis ativos
         List<Aluguel> alugueisAtivos = new ArrayList<>();
 
         System.out.println("=== SISTEMA DE LOCADORA (versão final) ===");

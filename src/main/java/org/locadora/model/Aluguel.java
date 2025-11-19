@@ -18,7 +18,6 @@ public class Aluguel {
         this.notificacao = notificacao;
         this.valor = item.calcularPreco(dias);
 
-        // registrar cliente para receber notificações (simples)
         if (this.notificacao != null) {
             this.notificacao.adicionarObservador(cliente);
         }

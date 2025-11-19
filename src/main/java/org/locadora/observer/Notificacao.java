@@ -22,7 +22,6 @@ public class Notificacao {
         }
     }
 
-    // Método auxiliar para notificar apenas um observador (se necessário)
     public void notificar(Observador o, String mensagem) {
         if (o != null) {
             o.atualizar(mensagem);

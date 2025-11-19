@@ -36,7 +36,7 @@ public class Item {
         this.estado = estado;
     }
 
-    // utilitário para checar disponibilidade sem expor o estado diretamente
+
     public boolean estaDisponivel() {
         return estado instanceof Disponivel;
     }
